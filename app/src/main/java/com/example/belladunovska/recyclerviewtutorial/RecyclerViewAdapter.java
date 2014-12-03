@@ -46,12 +46,11 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
 
 
     // Provide a reference to the views for each data item
-// Complex data items may need more than one view per item, and
-// you provide access to all the views for a data item in a view holder
+    // Complex data items may need more than one view per item, and
+    // you provide access to all the views for a data item in a view holder
     class ViewHolder extends RecyclerView.ViewHolder {
         // public data item is just a string in this case
         public TextView mTextView;
-
 
         public ViewHolder(View v) {
             super(v);
@@ -60,11 +59,5 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
 
     }
 
-    public void remove(int position) {
-        days.remove(position);
-        notifyItemRemoved(position);
-    }
-
-    
 }
 
